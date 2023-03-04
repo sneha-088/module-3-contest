@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    color: white;
+    border-bottom: 1.5px solid white;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size:2em;
+    background:  linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.2));
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    overflow: hidden;
+    
+}
+p{
+ color:lightgray;
+ text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+ width: 100%;
+ font-size: 1.3em;
+ font-weight: 200px;
+ font-family: sans-serif;
+ margin: 1.5rem  0 0 1.5rem;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-left: 1.4rem;
+  }
+  
+  .search-bar form {
+    display: flex;
+    margin-left:-15rem;
+    width: 80%;
+  }
+  
+  .search-bar input[type="text"] {
+    flex: 1;
+    height: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .search-bar button[type="submit"] {
+    height: 100%;
+    width: 50px;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .search-bar button[type="submit"]:hover {
+    background-color: #666666;
+  }
+  .search-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 4px 4px 8px rgba(178, 173, 200, 0.8);
+    cursor: pointer;
+    margin-left: 1.5rem;
+  }
+  
+  .search-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  .bubble-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation: bubble-rise 15s linear infinite;
+  }
+  
+  .bubble-1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .bubble-2 {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    left: 20%;
+  }
+  
+  .bubble-3 {
+    width: 75px;
+    height: 75px;
+    top: 30%;
+    left: 50%;
+  }
+  
+  .bubble-4 {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 70%;
+  }
+  
+  .bubble-5 {
+    width: 80px;
+    height: 80px;
+    top: 70%;
+    left: 20%;
+  }
+  
+  .bubble-6 {
+    width: 40px;
+    height: 40px;
+    top: 80%;
+    left: 80%;
+  }
+  
+  .bubble-7 {
+    width: 120px;
+    height: 120px;
+    top: 90%;
+    left: 40%;
+  }
+  
+  .bubble-8 {
+    width: 90px;
+    height: 90px;
+    top: 10%;
+    left: 70%;
+  }
+  
+  .bubble-9 {
+    width: 65px;
+    height: 65px;
+    top: 40%;
+    left: 30%;
+  }
+  
+  .bubble-10 {
+    width: 55px;
+    height: 55px;
+    top: 60%;
+    left: 60%;
+  }
+  #results{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 2px solid red; */
+    /* margin: 10px; */
+    padding: 20px;
+  }
+
+  .book{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    color: white;
+    margin-bottom: 2rem;
+    background-color: #181717;
+    border-radius: 4px;
+    box-shadow: 3px 3px 5px rgba(200, 196, 196, 0.8);;
+  }
+img{
+    width: 250px;
+    /* border: 1px solid orange; */
+  }
+
+  .discription{
+    display: flex;
+    flex-direction: wrap;
+    padding: 20px;
+    /* margin: 20px; */
+    /* border: 2px solid greenyellow; */
+  }
+  .flex{
+    display: flex;
+  }
+  .flex-button{
+    display: flex;
+    gap: 20px;
+    margin: 1.5rem;
+  }
+  a{
+    text-decoration: none;
+  }
+
+
+  
+  @keyframes bubble-rise {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-200%);
+    }
+  }
+  
